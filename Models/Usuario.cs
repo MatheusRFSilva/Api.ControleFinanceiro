@@ -5,6 +5,11 @@ namespace Api.ControleFinanceiro.Models
 {
     public class Usuario
     {
+        public Usuario()
+        {
+            DataCriacao = DateTime.Now;
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -28,5 +33,7 @@ namespace Api.ControleFinanceiro.Models
         [MinLength(3, ErrorMessage = "Este campo deve ter no minimo 3 Caracteres")]
         public string Password { get; set; }
         public DateTime DataCriacao { get; set; }
+
+
     }
 }
