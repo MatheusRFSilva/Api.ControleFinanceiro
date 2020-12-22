@@ -12,5 +12,6 @@ namespace Api.ControleFinanceiro.Data
 
         }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
     }
 }
