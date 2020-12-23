@@ -13,5 +13,9 @@ namespace Api.ControleFinanceiro.Data
         }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Conta> Contas { get; set; }
+
+        public DbSet<Lancamento> Lancamentos { get; set; }
+        public DbSet<TipoLancamento> TipoLancamentos { get; set; }
     }
 }
