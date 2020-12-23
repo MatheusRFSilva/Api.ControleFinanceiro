@@ -42,6 +42,10 @@ namespace Api.ControleFinanceiro.Controllers
             {
                 context.Usuarios.Add(model);
                 await context.SaveChangesAsync();
+                var conta = new Conta { UsuarioId = model.Id };
+                context.Contas.Add(conta);
+                await context.SaveChangesAsync();
+
                 return model;
             }
             else
